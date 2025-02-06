@@ -211,7 +211,7 @@ export interface KatexOptions {
 export function render(
     tex: string,
     element: HTMLElement,
-    options?: KatexOptions,
+    options: KatexOptions,
 ): void;
 
 /**
@@ -225,7 +225,7 @@ export function render(
  * @returns {string} The HTML string of the rendered math.
  * @see https://katex.org/docs/api
  */
-export function renderToString(tex: string, options?: KatexOptions): string;
+export function renderToString(tex: string, options: KatexOptions): string;
 
 /**
  * If KaTeX encounters an error (invalid or unsupported LaTeX) and
